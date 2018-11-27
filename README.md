@@ -27,7 +27,7 @@ You need to follow these commands in order to use and run project:
 * DB_PASSWORD=
     </pre>
     
-    - You also can change GEOLITE properties, but if you don't, it still will work without any changes.
+    - You also can change GEOLITE properties, but if you don't, it will still work without any changes.
 <pre>
 * GEOLITE_LOCAL_PATH="storage/app/"
 * GEOLITE_URL="http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip"
@@ -38,8 +38,8 @@ You need to follow these commands in order to use and run project:
 <li>Run <code>php artisan migrate</code> to create database table.</li>
 <li>Run <code>php artisan key:generate</code> to set application key. </li>
 <li>Run <code>php artisan geolocation:update</code> to populate database table with updated data. </li>
-<li>Finally, you just need to <code>php artisan serve</code> to start web server and run application. </li>
+<li>Finally, you just need to run <code>php artisan serve</code> to start web server and run application. </li>
 
 </ul>
 
-Now you should use any HTTP client that supports , such as Postman or Insomnia or any other tool.
+* Now you should use any HTTP client that supports , such as Postman or Insomnia or any other tool.
