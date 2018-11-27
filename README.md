@@ -46,8 +46,13 @@ You need to follow these commands in order to use and run project:
 
 * Now you should use any API testing tool, such as Postman or Insomnia or any other of your preference to send requests to the API.
 
-By default, php artisan will start web server on port 8000 (localhost). So now, using one of those tools, you just need to request a GET 
+By default, php artisan will start web server on port 8000 (localhost). So now, using one of those tools, you just need to request using GET method to 'api/locationByIP', passing 'IP' parameter.
 
+Example:
 <ul>
   <li>REST GET request to return the country associated with an IP address: http://127.0.0.1:8000/api/locationByIP?IP=2.16.6.0</li>
 </ul>
+The API will return a JSON with 'country_code' and 'country_name'.
+
+Example:
+<code>{"country_code":"DE","country_name":"Germany"}</code>
