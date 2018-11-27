@@ -62,3 +62,11 @@ By default, php artisan will start web server on port 8000 (localhost). So now, 
 <pre>
 <code>{"IP":["The ip field is required."]}</code>
 </pre>
+
+## Tests
+
+There are some unit/feature tests implemented using PHPUnit and that can be used as examples for some other automated tests:
+<li>Go to root folder and run <code>./vendor/phpunit/phpunit/phpunit</code>.</li>
+ </ul>
+
+Once you do this, some tests will be executed and result will be shown on terminal.
