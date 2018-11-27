@@ -65,7 +65,7 @@ class GeoLocationCommand extends Command
         $this->comment('Checking='.$url);
         // Get header response
         $headers = get_headers($url);
-
+        //check if request is working
         if (substr($headers[0], 9, 3) != '200') {
             throw new Exception('Unable to download database. ('. substr($headers[0], 13) .')');
         }
@@ -84,6 +84,7 @@ class GeoLocationCommand extends Command
         
         $this->comment('File saved. Cleaning up database...');
 
+        //truncate table before insert
         MaxmindGeoIP::truncate();
 
         $this->comment('Database cleaned.');
