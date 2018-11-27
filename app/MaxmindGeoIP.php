@@ -1,5 +1,4 @@
 <?php
-
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
@@ -10,8 +9,14 @@ class MaxmindGeoIP extends Model
     protected $table = 'maxmind_geoip';
     public $timestamps = false;
 
-    protected $connection = 'mysql';
-
+    /**
+     * Custom query to return first ocurrence of country 
+     * associated with the input IP (if exists)
+     *
+     * @param  mixed $IP IP address to be searched on database
+     *
+     * @return mixed Collection of table records (in this case, only the first row)
+     */
     public static function getCountryByIP($IP) 
     {
         return DB::table('maxmind_geoip as info')
