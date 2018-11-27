@@ -18,7 +18,7 @@ API that supports a RESTful GET endpoint that returns the country when supplied 
 You need to follow these commands in order to use and run project:
 
 <ul>
-<li>After cloning this repository, go to the root folder, and edit .env file to setup MySQL properties:
+<li>- After cloning this repository, go to the root folder, and edit .env file to setup MySQL properties:
         <pre>
 * DB_HOST=
 * DB_PORT=
@@ -26,8 +26,8 @@ You need to follow these commands in order to use and run project:
 * DB_USERNAME=
 * DB_PASSWORD=
     </pre>
-    
-    - You also can change GEOLITE properties, but if you don't, it will still work without any changes.
+        </li>
+        <li>- You also can change GEOLITE properties, but if you don't, it will still work without any changes:
 <pre>
 * GEOLITE_LOCAL_PATH="storage/app/"
 * GEOLITE_URL="http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip"
@@ -42,4 +42,4 @@ You need to follow these commands in order to use and run project:
 
 </ul>
 
-* Now you should use any HTTP client that supports , such as Postman or Insomnia or any other tool.
+* Now you should use any API testing tool, such as Postman or Insomnia or any other of your preference.
