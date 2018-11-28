@@ -33,7 +33,7 @@ You need to follow these commands in order to use and run project:
 </pre>
 </li>
     After that, you need to run the following commands:
-<li>Run <code>composer update</code> to create database table.</li>
+<li>Run <code>composer update</code> to get the latest matching versions, according to composer.json file.</li>
 <li>Run <code>php artisan migrate</code> to create database table.</li>
 <li>Run <code>php artisan key:generate</code> to set application key. </li>
 <li>Run <code>php artisan geolocation:update</code> to populate database table with updated data. </li>
@@ -69,4 +69,4 @@ There are some unit/feature tests implemented using PHPUnit and that can be used
 <li>Go to root folder and run <code>./vendor/phpunit/phpunit/phpunit</code>.</li>
  </ul>
 
-Once you do this, some tests will be executed and result will be shown on terminal.
+Once you do this, some tests will be executed and results will be shown on terminal.
