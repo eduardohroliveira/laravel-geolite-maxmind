@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>API REST</h1>';
+    //return view('welcome');
 });
